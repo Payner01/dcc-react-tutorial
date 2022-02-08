@@ -11,7 +11,7 @@
             <tbody>
             {props.parentEntries.map((entry, index) => {
                 return (
-                <tr>
+                <tr key={index}>
                     <td>{index + 1}</td>
                     <td>{entry.weight}</td>
                     <td>{entry.date}</td>
